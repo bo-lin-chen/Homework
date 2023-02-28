@@ -36,11 +36,11 @@ else:
 hex2=[0,0]
 number3=0
 number4=0
-for k in range(0,7):
+for k in range(0,8):
     if k < 4:
         number3=number3+2**(3-k)*binary[k]
         hex2[0]=hex_number[number3]
     elif k>3:
         number4=number4+2**(7-k)*binary[k]
-        hex2[1]=hex_number[number4+1]
+        hex2[1]=hex_number[number4]
 print(hex2)
